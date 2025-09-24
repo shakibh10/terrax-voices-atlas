@@ -57,6 +57,30 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // TerraX custom colors
+        terra: {
+          fire: "hsl(0, 84%, 60%)",
+          forest: "hsl(142, 76%, 46%)",
+          ocean: "hsl(187, 85%, 53%)",
+          space: "hsl(221, 39%, 11%)",
+          earth: "hsl(221, 83%, 53%)",
+        },
+      },
+      backgroundImage: {
+        "terra-space": "var(--terra-gradient-space)",
+        "terra-earth": "var(--terra-gradient-earth)",
+        "terra-atmosphere": "var(--terra-gradient-atmosphere)",
+        "terra-fire": "var(--terra-gradient-fire)",
+        "terra-forest": "var(--terra-gradient-forest)",
+      },
+      boxShadow: {
+        "terra-glow": "var(--terra-shadow-glow)",
+        "terra-deep": "var(--terra-shadow-deep)",
+        "terra-card": "var(--terra-shadow-card)",
+      },
+      transitionTimingFunction: {
+        "terra-smooth": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "terra-bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +104,38 @@ export default {
             height: "0",
           },
         },
+        // TerraX custom animations
+        "pulse-glow": {
+          "0%": { opacity: "0.6" },
+          "100%": { opacity: "1" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "rotate-slow": {
+          "from": { transform: "rotate(0deg)" },
+          "to": { transform: "rotate(360deg)" },
+        },
+        "slide-up": {
+          "from": { 
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          "to": { 
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        // TerraX custom animations
+        "float": "float 6s ease-in-out infinite",
+        "rotate-slow": "rotate-slow 20s linear infinite",
+        "slide-up": "slide-up 0.6s ease-out",
+        "pulse-glow": "pulse-glow 4s ease-in-out infinite alternate",
       },
     },
   },
