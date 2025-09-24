@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Slider } from "@/components/ui/slider";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card.jsx";
+import { Button } from "@/components/ui/button.jsx";
+import { Slider } from "@/components/ui/slider.jsx";
+import { Badge } from "@/components/ui/badge.jsx";
 import { Flame, Droplets, TreePine, Factory, Zap, Map } from "lucide-react";
 
 const ClimateAtlas = () => {

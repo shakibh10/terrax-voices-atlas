@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Card, CardContent } from "@/components/ui/card.jsx";
+import { Button } from "@/components/ui/button.jsx";
+import { Badge } from "@/components/ui/badge.jsx";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog.jsx";
 import { Play, MapPin, Calendar, Database, Globe, X } from "lucide-react";
 
 const StoriesHub = () => {
-  const [selectedStory, setSelectedStory] = useState<any>(null);
+  const [selectedStory, setSelectedStory] = useState(null);
 
   // Sample stories data
   const stories = [

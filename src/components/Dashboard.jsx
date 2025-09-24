@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card.jsx";
+import { Badge } from "@/components/ui/badge.jsx";
+import { Progress } from "@/components/ui/progress.jsx";
 import { TrendingUp, TrendingDown, AlertTriangle, Leaf, Flame, Waves, Thermometer } from "lucide-react";
 
 const Dashboard = () => {

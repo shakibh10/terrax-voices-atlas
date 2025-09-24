@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button.jsx";
 import { Globe, Map, BookOpen, Camera, BarChart3, Menu, X } from "lucide-react";
 
 const Navigation = () => {
@@ -13,7 +13,7 @@ const Navigation = () => {
     { icon: BarChart3, label: "Dashboard", href: "#dashboard" },
   ];
 
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (href) => {
     const element = document.querySelector(href);
     element?.scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false);

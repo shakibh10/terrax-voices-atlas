@@ -1,9 +1,9 @@
-import Navigation from "../components/Navigation";
-import HeroSection from "../components/HeroSection";
-import ClimateAtlas from "../components/ClimateAtlas";
-import StoriesHub from "../components/StoriesHub";
-import VRExperience from "../components/VRExperience";
-import Dashboard from "../components/Dashboard";
+import Navigation from "../components/Navigation.jsx";
+import HeroSection from "../components/HeroSection.jsx";
+import ClimateAtlas from "../components/ClimateAtlas.jsx";
+import StoriesHub from "../components/StoriesHub.jsx";
+import VRExperience from "../components/VRExperience.jsx";
+import Dashboard from "../components/Dashboard.jsx";
 
 const Index = () => {
   return (

@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button.jsx";
 import { ArrowRight, Play, Globe, Database } from "lucide-react";
 import heroEarth from "@/assets/hero-earth.jpg";
 
 const HeroSection = () => {
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (href) => {
     const element = document.querySelector(href);
     element?.scrollIntoView({ behavior: "smooth" });
   };
